@@ -1,23 +1,68 @@
-/* Sélectionner toutes les images dans le damier */
-.damier img {
-    width: 180px;  /* Largeur fixe de 180px */
-    height: 250px; /* Hauteur fixe de 250px */
-    
-    /* Centrer l'image horizontalement et verticalement dans sa carte */
-    display: block;        /* Enlève l'espace sous l'image */
-    margin-left: auto;     /* Centre horizontalement */
-    margin-right: auto;    /* Centre horizontalement */
-    margin-top: auto;      /* Centre verticalement */
-    margin-bottom: auto;   /* Centre verticalement */
+/* --- RESET SIMPLE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Sélectionner les cartes */
+
+/* --- BASE GÉNÉRALE --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- EN-TÊTE --- */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* --- DAMIER --- */
+.damier {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 10px;
+}
+
+/* --- CARTES --- */
 .card {
-    display: flex;         /* Utilisation du Flexbox */
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;   /* Centre l'image verticalement */
-    width: 200px;          /* Largeur de la carte (ajuste selon tes besoins) */
-    height: 270px;         /* Hauteur de la carte (ajuste selon tes besoins) */
-    border: 1px solid #ccc; /* Bordure autour de la carte (facultatif) */
-    padding: 10px;         /* Un peu d'espace à l'intérieur de la carte */
-    box-sizing: border-box; /* Assure que les bordures et les paddings sont pris en compte dans les dimensions */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* --- IMAGES --- */
+.card img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* --- PIED DE PAGE --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
 }
