@@ -1,0 +1,23 @@
+/* Sélectionner toutes les images dans le damier */
+.damier img {
+    width: 180px;  /* Largeur fixe de 180px */
+    height: 250px; /* Hauteur fixe de 250px */
+    
+    /* Centrer l'image horizontalement et verticalement dans sa carte */
+    display: block;        /* Enlève l'espace sous l'image */
+    margin-left: auto;     /* Centre horizontalement */
+    margin-right: auto;    /* Centre horizontalement */
+    margin-top: auto;      /* Centre verticalement */
+    margin-bottom: auto;   /* Centre verticalement */
+}
+/* Sélectionner les cartes */
+.card {
+    display: flex;         /* Utilisation du Flexbox */
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;   /* Centre l'image verticalement */
+    width: 200px;          /* Largeur de la carte (ajuste selon tes besoins) */
+    height: 270px;         /* Hauteur de la carte (ajuste selon tes besoins) */
+    border: 1px solid #ccc; /* Bordure autour de la carte (facultatif) */
+    padding: 10px;         /* Un peu d'espace à l'intérieur de la carte */
+    box-sizing: border-box; /* Assure que les bordures et les paddings sont pris en compte dans les dimensions */
+}
