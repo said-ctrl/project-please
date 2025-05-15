@@ -1,68 +1,57 @@
-/* --- RESET SIMPLE --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* --- BASE GÉNÉRALE --- */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: rgb(160, 197, 231);
 }
 
-/* --- EN-TÊTE --- */
-header {
+h1 {
     text-align: center;
-    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.2rem;
 }
 
-header h1 {
-    font-size: 2rem;
-}
-
-/* --- DAMIER --- */
-.damier {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 10px;
-}
-
-/* --- CARTES --- */
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 200px;
-    height: 270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.2s;
+    width: 18rem;
+    border-radius: 18px;
 }
 
-.card:hover {
-    transform: scale(1.03);
+p.card-text{
+    color: rgb(77, 73, 73);
 }
 
-/* --- IMAGES --- */
-.card img {
+.card-img-top {
     width: 180px;
     height: 250px;
-    object-fit: cover;
+    margin: 10px auto;
 }
 
-/* --- PIED DE PAGE --- */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #666;
+.date_sortie{
+
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(77, 73, 73);
+
+}
+
+.btn{
+    width: 210px;
+    margin: auto;
+}
+
+.btn:hover{
+    background-color: rgb(77, 73, 73);
+    color: white;
+}
+
+.btn:hover span{
+    color: white;
+}
+
+.btn img{
+    width :30px;
+}
+
+.btn span{
+    margin-left: 30px; 
+    vertical-align: middle;
+    color: rgb(77, 73, 73);
 }
